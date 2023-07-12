@@ -1,10 +1,10 @@
-# nvram for bcm94389c1GGmodG2_V1.1
+# nvram for bcm94389c1GGmodUSI_ES1.7
 # nvram copied and edited from bcm94389c1fcpage_p300.txt
 # SSID generated using Alberto's boardssid.py script:
 #********************SUMMARY********************
-#Board Name: bcm94389c1GGmodG2 C10 PROTO1.0
-#SSID: 0x09f0
-#macmid: 0x046f
+#Board Name: bcm94389c1GGmodUSI R4 PROTO1.0
+#SSID: 0x0984
+#macmid: 0x0402
 #Successfully made SSID entry in sromdefs.tcl.
 #Successfully made macmid entry in sromdefs.tcl.
 #Successfully made SSID entry in tblssid.py.
@@ -21,8 +21,8 @@ NVRAMRev=$Rev: 855734 $
 # lines of an svn keyword line will cause patching errors in precommit.
 #
 sromrev=11
-boardrev=0x1101
-boardtype=0x09f0
+boardrev=0x1107
+boardtype=0x0984
 boardflags=0x10401001
 boardflags2=0x00800000
 boardflags3=0xc0002100
@@ -54,25 +54,25 @@ rxgains2gelnagaina0=13
 rxgains2gtrisoa0=15
 rxgains2gtrelnabypa0=1
 rxgains5gelnagaina0=14
-rxgains5gtrisoa0=23
+rxgains5gtrisoa0=20
 rxgains5gtrelnabypa0=1
 rxgains5gmelnagaina0=14
-rxgains5gmtrisoa0=23
+rxgains5gmtrisoa0=20
 rxgains5gmtrelnabypa0=1
 rxgains5ghelnagaina0=14
-rxgains5ghtrisoa0=23
+rxgains5ghtrisoa0=20
 rxgains5ghtrelnabypa0=1
 rxgains2gelnagaina1=13
 rxgains2gtrisoa1=15
 rxgains2gtrelnabypa1=1
 rxgains5gelnagaina1=14
-rxgains5gtrisoa1=23
+rxgains5gtrisoa1=20
 rxgains5gtrelnabypa1=1
 rxgains5gmelnagaina1=14
-rxgains5gmtrisoa1=23
+rxgains5gmtrisoa1=20
 rxgains5gmtrelnabypa1=1
 rxgains5ghelnagaina1=14
-rxgains5ghtrisoa1=23
+rxgains5ghtrisoa1=20
 rxgains5ghtrelnabypa1=1
 
 rxgains2gfelossa0=2
@@ -90,38 +90,35 @@ rxgaincal_rssical=1
 gain_cal_temp=32
 rssi_cal_freq_grp_2g= 0x08,0x01,0x91,0x2a,0x23,0xb3,0xc4
 
-rssi_delta_2gb0=-10,-1,-8,-1,-10,-1,-8,-1,-7,-4,-7,-2,-7,-4,-7,-2
-rssi_delta_2gb1=-9,-2,-6,-4,-7,-2,-6,-4,-7,-3,-5,-2,-7,-3,-5,-2
-rssi_delta_2gb2=-7,-5,-8,-7,-7,-5,-8,-7,-7,-6,-8,-5,-7,-6,-8,-5
-rssi_delta_2gb3=-4,-3,-6,-4,-4,-3,-6,-4,-7,-6,-7,-4,-7,-6,-7,-4
-rssi_delta_2gb4=-3,1,-3,-2,-3,1,-3,-2,-6,-3,-5,-2,-6,-3,-5,-2
-rssi_delta_5gl=8,0,6,7,6,-1,4,7,8,1,6,3,10,5,9,3,6,-1,3,4,4,-2,1,4,7,0,3,2,7,3,4,2
-rssi_delta_5gml=13,1,10,8,11,1,8,8,13,4,17,4,13,5,11,4,8,-4,2,2,6,-5,0,2,8,-3,2,0,8,0,3,0
-rssi_delta_5gmu=13,1,9,7,11,0,7,7,10,-1,5,-1,12,2,10,-1,9,-2,3,2,7,-3,0,2,9,-1,2,-1,9,2,4,-1
-rssi_delta_5gh=17,3,11,4,15,2,8,4,16,7,16,-4,11,0,7,-4,13,0,6,6,11,-1,4,6,12,4,13,-7,5,-4,0,-7
-rssi_delta_6gb0=15,6,10,11,16,9,9,11,19,10,12,8,19,11,19,8,13,6,6,11,11,4,2,11,14,7,6,11,16,9,13,11
-rssi_delta_6gb1=21,8,16,11,20,8,21,11,23,11,15,8,25,13,22,8,20,8,14,10,18,7,10,10,21,9,13,10,24,13,20,10
-rssi_delta_6gb2=21,10,15,21,20,10,11,21,23,13,14,20,27,18,23,20,18,9,14,20,19,10,11,20,21,12,14,19,25,16,21,19
-rssi_delta_6gb3=27,14,18,27,24,12,14,27,28,16,17,26,31,19,25,26,23,12,16,24,21,10,11,24,25,13,14,23,28,17,21,23
-rssi_delta_6gb4=28,16,20,33,32,20,19,37,32,20,21,29,32,20,26,29,23,10,14,22,24,11,10,22,29,16,13,20,24,12,15,16
-rssi_delta_6gb5=35,24,24,35,35,24,23,39,35,24,26,31,37,26,29,31,28,17,19,21,25,14,13,21,29,17,18,19,28,16,19,15
+rssi_delta_2gb0=5,10,2,10,5,10,2,10,11,13,7,15,11,13,7,15
+rssi_delta_2gb1=4,10,5,10,4,10,5,10,7,9,6,14,7,9,6,14
+rssi_delta_2gb2=5,8,3,10,5,8,3,10,7,9,6,14,7,9,6,14
+rssi_delta_2gb3=6,10,4,12,6,10,4,12,8,11,6,14,8,11,6,14
+rssi_delta_2gb4=7,16,9,13,7,16,9,13,14,17,13,18,14,17,13,18
+rssi_delta_5gl=25,22,27,22,25,22,27,22,25,22,27,22,25,22,27,22,25,27,27,20,25,27,27,20,25,27,27,20,25,27,27,20
+rssi_delta_5gml=29,22,28,18,29,22,28,18,29,22,28,18,29,22,28,18,28,20,27,19,28,20,27,19,28,20,27,19,28,20,27,19
+rssi_delta_5gmu=33,25,31,22,33,25,31,22,33,25,31,22,33,25,31,22,29,22,27,18,29,22,27,18,29,22,27,18,29,22,27,18
+rssi_delta_5gh=35,24,32,22,35,24,32,22,35,24,32,22,35,24,32,22,29,21,26,16,29,21,26,16,29,21,26,16,29,21,26,16
+rssi_delta_6gb0=30,24,27,23,30,24,27,23,30,24,27,23,30,24,27,23,27,21,24,17,27,21,24,17,27,21,24,17,27,21,24,17
+rssi_delta_6gb1=37,28,33,24,37,28,33,24,37,28,33,24,37,28,33,24,33,25,31,25,33,25,31,25,33,25,31,25,33,25,31,25
+rssi_delta_6gb2=40,28,35,29,40,28,35,29,40,28,35,29,40,28,35,29,35,30,32,27,35,30,32,27,35,30,32,27,35,30,32,27
+rssi_delta_6gb3=44,32,40,32,44,32,40,32,44,32,40,32,44,32,40,32,37,26,37,27,37,26,37,27,37,26,37,27,37,26,37,27
+rssi_delta_6gb4=48,36,43,38,48,36,43,38,48,36,43,38,48,36,43,38,40,30,36,32,40,30,36,32,40,30,36,32,40,30,36,32
+rssi_delta_6gb5=53,40,49,42,53,40,49,42,53,40,49,42,53,40,49,42,48,35,44,37,48,35,44,37,48,35,44,37,48,35,44,37
 
+slice/2/rssicorrnorm5g_c0=0,0,0,0,0,0,0,0,0,0,0,0
+slice/2/rssicorrnorm_c0=0,0
 
-slice/2/rssicorrnorm5g_c0=-6,0,0,-5,0,0,-7,0,0,-8,0,0
-slice/2/rssicorrnorm_c0=-2,0
-
-slice/1/rxgain_tempcoeff2g_sub=14,9,21,18,18,15,13,18,16,15
-rxgain_tempcoeff5gl=34,38
-rxgain_tempcoeff5gml=37,32
-rxgain_tempcoeff5gmu=38,32
-rxgain_tempcoeff5gh=41,32
-rxgain_tempcoeff6g_sub=39,33,33,38,41,43,36,37,38,36,39,42
-slice/1/rxgain_tempcoeff2g_sub_elnaoff=11,10,12,16,10,10,9,8,15,9
-rxgain_tempcoeff5gl_elnaoff=33,33
-rxgain_tempcoeff5gml_elnaoff=32,27
-rxgain_tempcoeff5gmu_elnaoff=34,32
-rxgain_tempcoeff5gh_elnaoff=36,35
-rxgain_tempcoeff6g_sub_elnaoff=36,36,37,36,37,37,32,33,39,32,40,37
+slice/1/rxgain_tempcoeff2g_sub=0,0,0,0,0,0,0,0,0,0
+rxgain_tempcoeff5gl=0,0
+rxgain_tempcoeff5gml=0,0
+rxgain_tempcoeff5gmu=0,0
+rxgain_tempcoeff5gh=0,0
+slice/1/rxgain_tempcoeff2g_sub_elnaoff=0,0,0,0,0,0,0,0,0,0
+rxgain_tempcoeff5gl_elnaoff=0,0
+rxgain_tempcoeff5gml_elnaoff=0,0
+rxgain_tempcoeff5gmu_elnaoff=0,0
+rxgain_tempcoeff5gh_elnaoff=0,0
 
 #TSSI Related
 low_adc_rate_en=1
@@ -169,13 +166,13 @@ olpc_anchor5g=32
 olpc_anchor6g=32
 olpc_thresh6g=32
 slice/1/disable_olpc=0
-slice/1/olpc_thresh2g=40
-slice/1/olpc_anchor2g=40
+slice/1/olpc_thresh2g=32
+slice/1/olpc_anchor2g=32
 slice/1/olpc_thresh2g_hi=0x7f7f
-hwolpc_offset_c0=0x2,0xFF030002,0xFFFFFEFF,0x0,0x20202
-hwolpc_offset_c1=0x2,0xFE010102,0xFE00FEFF,0xFEFFFFFF,0xFE030101
-hwolpc_offset6g_c0=0xFD040302,0xFD020202,0xFE030201,0xFE020102,0xFE020202,0xFE010302
-hwolpc_offset6g_c1=0xFE020102,0xFD030102,0xFE020102,0xFE020102,0xFE020202,0xFE020201
+hwolpc_offset_c0=0,0x0,0x00000002,0x00000002,0x00000002,0x00000002
+hwolpc_offset_c1=0,0x0,0x00000002,0x00000002,0x00000002,0x00000002
+hwolpc_offset6g_c0=0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000
+hwolpc_offset6g_c1=0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000
 tssipos2g=1
 tssipos5g=1
 
@@ -186,58 +183,59 @@ AvVmid_c1=2,135,2,135,2,135,2,135,2,138
 AvVmid_6g_c0=2,143,2,141,2,142,2,143,2,143,2,144
 AvVmid_6g_c1=2,138,2,139,2,140,2,140,2,142,2,143
 
-pa2ga0=-139,6874,-815
-pa2ga1=-135,6949,-809
-pa5ga0=-20,9531,-1311,-32,9305,-1307,-63,9045,-1315,-74,9027,-1314
-pa5ga1=-53,8863,-1249,-68,8765,-1267,-55,8915,-1280,-55,8720,-1277
-pa6ga0=-69,8983,-1317,-40,9228,-1325,-65,9001,-1327,-42,9134,-1328,-79,8709,-1322,-80,8627,-1330
-pa6ga1=-81,8501,-1278,-111,8226,-1284,-109,8058,-1261,-82,8320,-1274,-84,8306,-1272,-75,8424,-1285
+pa2ga0=0xffcf,0x1dee,0xfcbd
+pa2ga1=0xffc3,0x1d90,0xfcb1
+pa5ga0=0xfffb,0x224b,0xfb0d,0xfffb,0x2295,0xfaf7,0x0015,0x2344,0xfae1,0xfff6,0x2237,0xfae2
+pa5ga1=0xffe3,0x2164,0xfad2,0x000a,0x2307,0xfaca,0xffd1,0x21d1,0xfab0,0x000a,0x2315,0xfac2
+pa6ga0=0xffa0,0x1eea,0xfb27,0xff9c,0x1e85,0xfb33,0xffa2,0x1ec0,0xfb20,0xff7c,0x1db7,0xfb1e,0xff30,0x1b29,0xfb05,0xff52,0x1b13,0xfb1f
+pa6ga1=0xffcb,0x20a4,0xfae0,0xffa0,0x1f6c,0xfad9,0xff8f,0x1e42,0xfb01,0xffa3,0x1f1c,0xfae6,0xff78,0x1d3e,0xfaef,0xff59,0x1bed,0xface
 
 # Max power and offsets
-slice/1/powoffs2gtna0=2,2,3,3,3,3,3,3,3,2,2,2,1,1
-slice/1/powoffs2gtna1=1,1,2,2,2,3,2,2,2,2,2,2,1,1
+slice/1/powoffs2gtna0=2,0,0,0,0,0,0,0,0,0,0,0,-2,-2
+slice/1/powoffs2gtna1=1,0,0,0,0,0,1,0,0,0,0,0,-2,-2
+#slice/1/powoffsccktna0=0,0,0,0,0,0,0,0,0,0,0,0,0,0
+#slice/1/powoffsccktna1=0,0,0,0,0,0,0,0,0,0,0,0,0,0
 
-maxp2ga0=97
-maxp2ga1=97
-maxp5ga0=92,90,88,88
-maxp5ga1=86,86,82,78
-maxp6ga0=87,87,89,89,92,92
-maxp6ga1=78,78,81,81,87,87
+maxp2ga0=78
+maxp2ga1=78
+maxp5ga0=78,78,78,78
+maxp5ga1=78,78,78,78
+maxp6ga0=78,78,78,78,78,78
+maxp6ga1=78,78,78,78,78,78
 subband5gver=0x4
 paparambwver=3
-slice/1/cckpwroffset0=4
-slice/1/cckpwroffset1=4
-pdoffset40ma0=0x2222
-pdoffset80ma0=0x1000
-pdoffset40ma1=0x2222
-pdoffset80ma1=0x0000
-pdoffset160ma0=0xEE00
-pdoffset160ma1=0xEE00
-pdoffset6g40ma0=0x222211	
-pdoffset6g40ma1=0x222222	
-pdoffset6g80ma0=0x2200FF	
-pdoffset6g80ma1=0x000000	
-pdoffset6g160ma0=0x22EFEE	
-pdoffset6g160ma1=0x11FFFE	
-pdoffset6g160ma1=0x11FFFE	
+slice/1/cckpwroffset0=3
+slice/1/cckpwroffset1=3
+pdoffset40ma0=0x1323
+pdoffset80ma0=0x2222
+pdoffset40ma1=0x1311
+pdoffset80ma1=0x2222
+pdoffset160ma0=0x0000
+pdoffset160ma1=0x0000
+pdoffset6g40ma0=0x442233
+pdoffset6g80ma0=0x331122
+pdoffset6g40ma1=0x442222
+pdoffset6g80ma1=0x441111
+pdoffset6g160ma0=0x220000
+pdoffset6g160ma1=0x440011
 slice/1/pdoffset20mRU_c0=0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 slice/1/pdoffset20mRU_c1=0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-pdoffset20mRU_c0=-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-3,-3,-3
-pdoffset20mRU_c1=-1,-1,-1,-1,-1,-1,-1,-1,-1,-2,-2,-2,-2,-2,-2,-2
-pdoffset40mRU_c0=-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-2,-2,-2,-2,-2,-2,-2,-3,-3,-3
-pdoffset40mRU_c1=1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,-1,-1,-1,-1,-2,-2,-2
-pdoffset80mRUset1_c0=-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1
-pdoffset80mRUset2_c0=-1,-1,-1,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-2,-3,-3,-3,-3,-3,-3,-3
+pdoffset20mRU_c0=0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+pdoffset20mRU_c1=0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+pdoffset40mRU_c0=0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+pdoffset40mRU_c1=0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+pdoffset80mRUset1_c0=0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+pdoffset80mRUset2_c0=0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 pdoffset80mRUset1_c1=0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-pdoffset80mRUset2_c1=0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-1,-1,-1,-1,-1,-1,-1
-pdoffset6g20mRU_c0=-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-2,-2,-2
-pdoffset6g20mRU_c1=-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-2,-2,-2
-pdoffset6g40mRU_c0=0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-2,-2,-2
-pdoffset6g40mRU_c1=0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-1,-1,-1,-1,-2,-2,-2
+pdoffset80mRUset2_c1=0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+pdoffset6g20mRU_c0=0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+pdoffset6g20mRU_c1=0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+pdoffset6g40mRU_c0=0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+pdoffset6g40mRU_c1=0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 pdoffset6g80mRUset1_c0=0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-pdoffset6g80mRUset2_c0=0,0,0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-2,-2,-2,-2,-2,-2,-2
-pdoffset6g80mRUset1_c1=2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
-pdoffset6g80mRUset2_c1=2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0
+pdoffset6g80mRUset2_c0=0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+pdoffset6g80mRUset1_c1=0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+pdoffset6g80mRUset2_c1=0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 
 pdoffset160mRUset1_c0=5,5,5,5,5,5,5,5,5,3,2,2,2,2,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 pdoffset160mRUset2_c0=0,0,0,4,4,4,4,2,2,1,1,0,0,0,0,0,0,0,0,4,4,2,1,0,0,0,0,4,2,0,0,2,0,1
@@ -249,25 +247,25 @@ pdoffset6g160mRUset1_c1=5,5,5,5,5,5,5,5,5,3,2,2,2,2,1,1,1,1,0,0,0,0,0,0,0,0,0,0,
 pdoffset6g160mRUset2_c1=0,0,0,5,5,5,5,2,2,1,1,0,0,0,0,0,0,0,0,5,5,2,1,0,0,0,0,5,2,0,0,2,0,1
 
 #2G/5G related PPR params
-cckbw202gpo=0x1111
-mcsbw202gpo=0xCB986554
-dot11agofdmhrbw202gpo=0x7654
-ofdmlrbw202gpo=0x2033
-mcsbw205glpo=0xA9753100
-mcsbw405glpo=0xA9865444
-mcsbw805glpo=0xA9864444
-mcsbw1605glpo=0xCCAA8875
-mcsbw205gmpo=0xA9753100
-mcsbw405gmpo=0xA9865444
-mcsbw805gmpo=0xA9864444
-mcsbw1605gmpo=0xCCAA8875
-mcsbw205ghpo=0xA9753100
-mcsbw405ghpo=0xA9865444
-mcsbw805ghpo=0xA9764444
-mcsbw1605ghpo=0xCCAA8875
-mcs1024qam5glpo=0xDDDDDDDD
-mcs1024qam5gmpo=0xDDDDDDDD
-mcs1024qam5ghpo=0xDDDDDDCC
+cckbw202gpo=0
+mcsbw202gpo=0x65432110
+dot11agofdmhrbw202gpo=0x0000
+ofdmlrbw202gpo=0x0000
+mcsbw205glpo=0x76543322
+mcsbw405glpo=0xa9775544
+mcsbw805glpo=0xa9775544
+mcsbw1605glpo=0xcb997766
+mcsbw205gmpo=0x65432211
+mcsbw405gmpo=0xa8553322
+mcsbw805gmpo=0xa8553322
+mcsbw1605gmpo=0xcb997766
+mcsbw205ghpo=0x76543322
+mcsbw405ghpo=0xa9775544
+mcsbw805ghpo=0xa9775544
+mcsbw1605ghpo=0xcb997766
+mcs1024qam5glpo=0xffdddddd
+mcs1024qam5gmpo=0xffbbbbbb
+mcs1024qam5ghpo=0xffcccccc
 # 5G power offset per channel for band edge channel
 powoffs5g20mtna0=0,0,0,0,0,0,0
 powoffs5g20mtna1=0,0,0,0,0,0,0
@@ -277,36 +275,65 @@ powoffs5g80mtna0=0,0,0,0,0
 powoffs5g80mtna1=0,0,0,0,0
 
 ## 6G related PPR params
-mcsbw206gb1po=0x97642222
-mcsbw406gb1po=0x87653232
-mcsbw806gb1po=0x98653222
-mcsbw1606gb1po=0x99766666
-mcsbw206gb2po=0x97642222
-mcsbw406gb2po=0x87653232
-mcsbw806gb2po=0x98653222
-mcsbw1606gb2po=0x99766666
-mcsbw206gb3po=0xA8754222
-mcsbw406gb3po=0x98764342
-mcsbw806gb3po=0x98754222
-mcsbw1606gb3po=0x98766666
-mcsbw206gb4po=0xA8754222
-mcsbw406gb4po=0x98764342
-mcsbw806gb4po=0x98754222
-mcsbw1606gb4po=0x98766666
-mcsbw206gb5po=0xA8754322
-mcsbw406gb5po=0x98764343
-mcsbw806gb5po=0x98754333
-mcsbw1606gb5po=0x98766666
-mcsbw206gb6po=0xECB98655
-mcsbw406gb6po=0xDCBA9875
-mcsbw806gb6po=0xDCA98765
-mcsbw1606gb6po=0xDCB99987
-mcs1024qam6gb1po=0xBBBAAAAA
-mcs1024qam6gb2po=0xBBBAAAAA
-mcs1024qam6gb3po=0xBBBBBBBB
-mcs1024qam6gb4po=0xBBBBBBBB
-mcs1024qam6gb5po=0xBBBBBBBB
+mcsbw206gb1po=0x98531000
+mcsbw406gb1po=0xa8642111
+mcsbw806gb1po=0xa8642111
+mcsbw1606gb1po=0xa8642111
+mcsbw206gb2po=0x98531000
+mcsbw406gb2po=0xa8642111
+mcsbw806gb2po=0xa8642111
+mcsbw1606gb2po=0xa8642111
+mcsbw206gb3po=0xa9642111
+mcsbw406gb3po=0xba753222
+mcsbw806gb3po=0xba753222
+mcsbw1606gb3po=0xba753222
+mcsbw206gb4po=0xa9642111
+mcsbw406gb4po=0xba753222
+mcsbw806gb4po=0xba753222
+mcsbw1606gb4po=0xba753222
+mcsbw206gb5po=0xa9642111
+mcsbw406gb5po=0xba753222
+mcsbw806gb5po=0xba753222
+mcsbw1606gb5po=0xba753222
+mcsbw206gb6po=0xcb864333
+mcsbw406gb6po=0xdc975444
+mcsbw806gb6po=0xdc975444
+mcsbw1606gb6po=0xdc975444
+mcs1024qam6gb1po=0xEEEEEEEE
+mcs1024qam6gb2po=0xEEEEEEEE
+mcs1024qam6gb3po=0xDDDDDDDD
+mcs1024qam6gb4po=0xDDDDDDDD
+mcs1024qam6gb5po=0xEEEEEEEE
 mcs1024qam6gb6po=0xFFFFFFFF
+
+## ULOFDMA Board limit PPRs for 6G20 ##
+ruppr6g20bpsk=0x7B9A
+ruppr6g20qpsk=0x7B9C
+ruppr6g20qam16=0x7BDC
+ruppr6g20qam64=0x28844
+ruppr6g20qam256=0x49084
+ruppr6g20qam1024=0x62529
+## ULOFDMA Board limit PPRs for 6G40 ##
+ruppr6g40bpsk=0x107B9A
+ruppr6g40qpsk=0x107B9A
+ruppr6g40qam16=0x107BDE
+ruppr6g40qam64=0x628842
+ruppr6g40qam256=0xA49082
+ruppr6g40qam1024=0xC62529
+## ULOFDMA Board limit PPRs for 6G80 ##
+ruppr6g80bpsk=0x8107B9A
+ruppr6g80qpsk=0x8107B9C
+ruppr6g80qam16=0x8107BDC
+ruppr6g80qam64=0x1C628842
+ruppr6g80qam256=0x28A49082
+ruppr6g80qam1024=0x38C62529
+## ULOFDMA Board limit PPRs for 6G160 ##
+ruppr6g160bpsk=0x8107B9A
+ruppr6g160qpsk=0x8107B9A
+ruppr6g160qam16=0x8107BDE
+ruppr6g160qam64=0x1C628842
+ruppr6g160qam256=0x28A49084
+ruppr6g160qam1024=0x38C62529
 
 subband6gver=0x1
 
@@ -318,27 +345,27 @@ ds_hc_enable=0
 
 # SWCTRL Related
 swctrlmap_5g=0x70707070,0x18180000,0x38380000,0x00000000,0x3FF
-swctrlmapext_5g=0x02020000,0x02020000,0x00000000,0x00000000,0x003
+swctrlmapext_5g=0x00000000,0x00000000,0x00000000,0x00000000,0x000
 slice/2/swctrlmap_5g=0x70707070,0x18180000,0x38380000,0x00000000,0x3FF
-slice/2/swctrlmapext_5g=0x02020000,0x02020000,0x00000000,0x00000000,0x003
+slice/2/swctrlmapext_5g=0x00000000,0x00000000,0x00000000,0x00000000,0x000
 
 swctrlmap_6g=0x50505050,0x18180000,0x38380000,0x00000000,0x3FF
-swctrlmapext_6g=0x02020000,0x02020000,0x00000000,0x00000000,0x003
+swctrlmapext_6g=0x00000000,0x00000000,0x00000000,0x00000000,0x000
 slice/2/swctrlmap_6g=0x50507070,0x18180000,0x38380000,0x00000000,0x3FF
-slice/2/swctrlmapext_6g=0x02020000,0x02020000,0x00000000,0x00000000,0x003
+slice/2/swctrlmapext_6g=0x00000000,0x00000000,0x00000000,0x00000000,0x000
 
 slice/1/swctrlmap_2g=0x81818181,0x82820000,0x80800000,0x000000,0x3FF
-slice/1/swctrlmapext_2g=0x01010000,0x01010000,0x00000000,0x000000,0x003
+slice/1/swctrlmapext_2g=0x00000000,0x00000000,0x00000000,0x000000,0x000
 slice/2/swctrlmap_2g=0x81818181,0x82820000,0x80800000,0x000000,0x3FF
-slice/2/swctrlmapext_2g=0x01010000,0x01010000,0x00000000,0x000000,0x003
+slice/2/swctrlmapext_2g=0x00000000,0x00000000,0x00000000,0x000000,0x000
 
 #slice0=Main, slice1=Aux
-clb5gslice0core0=0x278
-clb5gslice0core1=0x278
-clb5gslice2core0=0x278
-clb2gslice1core0=0x107
-clb2gslice1core1=0x107
-clb2gslice2core0=0x107
+clb5gslice0core0=0x078
+clb5gslice0core1=0x078
+clb5gslice2core0=0x078
+clb2gslice1core0=0x007
+clb2gslice1core1=0x007
+clb2gslice2core0=0x007
 
 muxenab=1
 
@@ -359,101 +386,73 @@ clb_swctrl_smask_ant1=0x37f
 # UWB Coex
 uwbcx_en=1
 uwbcx_gpio_input=0xc
-uwbcx_coex_bitmap_5g=0x03ff,0x07ff,0x7f
-uwbcx_coex_bitmap_6g=0xffff,0xffff,0xffff,0x07ff
+uwbcx_coex_bitmap_5g=0x0,0x0,0x0
+uwbcx_coex_bitmap_6g=0x0,0x0,0x0,0x0
 
 # energy detect threshold
 ed_thresh2g=-63
 ed_thresh5g=-63
-ed_thresh6g=-73
+ed_thresh6g=-63
 # energy detect threshold for EU
 eu_edthresh2g=-63
-eu_edthresh5g=-68
-eu_edthresh6g=-73
+eu_edthresh5g=-63
+eu_edthresh6g=-63
 
 #Feature flags
 femctrl=17
 
 # FE Loss comp parameters
-slice/1/felossTx2ga0=7,7,7,8,8,8,8,8,8,8,8,8,8,8
-slice/1/felossTx2ga1=8,8,8,8,7,7,7,7,7,7,7,8,8,8
-slice/1/felossRx2ga0=12,12,12,10,6,6,6,6,6,9,9,9,9,9
-slice/1/felossRx2ga1=12,12,12,12,12,12,12,12,12,12,12,14,14,14
-felossTx5ga0=12,10,8,8
-felossTx5ga1=6,6,2,-2
-felossRx5ga0=15,15,12,5
-felossRx5ga1=6,6,6,3
-felossTx6ga0=7,7,9,9,12,12
-felossTx6ga1=-2,-2,1,1,7,7
-felossRx6ga0=6,6,10,10,13,13
-felossRx6ga1=0,0,0,0,2,2
+slice/1/felossTx2ga0=0,0,0,0,0,0,0,0,0,0,0,0,0,0
+slice/1/felossTx2ga1=0,0,0,0,0,0,0,0,0,0,0,0,0,0
+slice/1/felossRx2ga0=0,0,0,0,0,0,0,0,0,0,0,0,0,0
+slice/1/felossRx2ga1=0,0,0,0,0,0,0,0,0,0,0,0,0,0
+felossTx5ga0=0,0,0,0
+felossTx5ga1=0,0,0,0
+felossRx5ga0=0,0,0,0
+felossRx5ga1=0,0,0,0
+felossTx6ga0=0,0,0,0,0,0
+felossTx6ga1=0,0,0,0,0,0
+felossRx6ga0=0,0,0,0,0,0
+felossRx6ga1=0,0,0,0,0,0
 slice/2/felossRx2ga0=0,0,0,0,0,0,0,0,0,0,0,0,0,0
 slice/2/felossRx5ga0=0,0,0,0
 slice/2/felossRx6ga0=0,0,0,0,0,0
 
 ## ULOFDMA Board limit PPRs for 2G20 ##
-ruppr2g20bpsk=0x20821084
-ruppr2g20qpsk=0x208318c6
-ruppr2g20qam16=0x20842108
-ruppr2g20qam64=0x2085294a
-ruppr2g20qam256=0x2086318c
-ruppr2g20qam1024=0x0c6318c6
+ruppr2g20bpsk=0xBDEF7
+ruppr2g20qpsk=0xBDEB7
+ruppr2g20qam16=0xCE737
+ruppr2g20qam64=0xFF7BD
+ruppr2g20qam256=0x18C61
+ruppr2g20qam1024=0xFFFFF
 ## ULOFDMA Board limit PPRs for 5G20 ##
-ruppr5g20bpsk=0x10408421
-ruppr5g20qpsk=0x10418c63
-ruppr5g20qam16=0x104294a5
-ruppr5g20qam64=0x1045ad6b
-ruppr5g20qam256=0x1045ad6b
-ruppr5g20qam1024=0x1045ad6b
+ruppr5g20bpsk=0xF7B9A
+ruppr5g20qpsk=0xF7B9C
+ruppr5g20qam16=0xF7BDC
+ruppr5g20qam64=0x20844
+ruppr5g20qam256=0x31084
+ruppr5g20qam1024=0x52529
 ## ULOFDMA Board limit PPRs for 5G40 ##
-ruppr5g40bpsk=0x10108421
-ruppr5g40qpsk=0x10318c63
-ruppr5g40qam16=0x105294a5
-ruppr5g40qam64=0x10739ce7
-ruppr5g40qam256=0x10b5ad6b
-ruppr5g40qam1024=0x10b5ad6b
+ruppr5g40bpsk=0xF7B9A
+ruppr5g40qpsk=0xF7B9A
+ruppr5g40qam16=0x7BDE
+ruppr5g40qam64=0x420842
+ruppr5g40qam256=0x631082
+ruppr5g40qam1024=0xB52529
 ## ULOFDMA Board limit PPRs for 5G80 ##
-ruppr5g80bpsk=0x0c318c63
-ruppr5g80qpsk=0x145294a5
-ruppr5g80qam16=0x1c739ce7
-ruppr5g80qam64=0x2494a529
-ruppr5g80qam256=0x2cb5ad6b
-ruppr5g80qam1024=0x2cb5ad6b
+ruppr5g80bpsk=0x80F7B9A
+ruppr5g80qpsk=0x80F7B9C
+ruppr5g80qam16=0x80F7BDC
+ruppr5g80qam64=0x10410842
+ruppr5g80qam256=0x18631082
+ruppr5g80qam1024=0x30B52529
 ## ULOFDMA Board limit PPRs for 5G160 ##
-ruppr5g160bpsk=0x0c318c63
-ruppr5g160qpsk=0x1c739ce7
-ruppr5g160qam16=0x2494a529
-ruppr5g160qam64=0x2cb5ad6b
-ruppr5g160qam256=0x2cb5ad6b
-ruppr5g160qam1024=0x2cb5ad6b
-## ULOFDMA Board limit PPRs for 6g20 ##
-ruppr6g20bpsk=0x10408421
-ruppr6g20qpsk=0x10418c63
-ruppr6g20qam16=0x104294a5
-ruppr6g20qam64=0x1044a529
-ruppr6g20qam256=0x1045ad6b
-ruppr6g20qam1024=0x1045ad6b
-# ULOFDMA Board limit PPRs for 6g40 ##
-ruppr6g40bpsk=0x10108421
-ruppr6g40qpsk=0x10318c63
-ruppr6g40qam16=0x105294a5
-ruppr6g40qam64=0x10739ce7
-ruppr6g40qam256=0x1094a529
-ruppr6g40qam1024=0x10b5ad6b
-## ULOFDMA Board limit PPRs for 6g80 ##
-ruppr6g80bpsk=0x0c318c63
-ruppr6g80qpsk=0x145294a5
-ruppr6g80qam16=0x1c739ce7
-ruppr6g80qam64=0x2494a529
-ruppr6g80qam256=0x2cb5ad6b
-ruppr6g80qam1024=0x34d6b5ad
-## ULOFDMA Board limit PPRs for 6g160 ##
-ruppr6g160bpsk=0x1c739ce7
-ruppr6g160qpsk=0x1c739ce7
-ruppr6g160qam16=0x2cb5ad6b
-ruppr6g160qam64=0x34d6b5ad
-ruppr6g160qam256=0x3cf7bdef
-ruppr6g160qam1024=0x3cf7bdef
+ruppr5g160bpsk=0xF7B9A
+ruppr5g160qpsk=0xF7B9A
+ruppr5g160qam16=0xF7BDE
+ruppr5g160qam64=0x10410842
+ruppr5g160qam256=0x18631084
+ruppr5g160qam1024=0x30B52529
 
 # Base K Values (For the VHT case 5G 160 & 5G80/40/20/2G20)
 proxd_basekival_5g_160=35312
@@ -499,182 +498,205 @@ proxd_6g_40mkval=0x2c,0x23,0x2a,0x25,0x26,0x1b,0x21,0x1b,0x20,0x12,0x14,0xf,0x7,
 proxd_6g_low_20mkval=0x3c,0x2d,0x31,0x36,0x37,0x31,0x27,0x2f,0x2d,0x2e,0x30,0x23,0x27,0x21,0x23,0x21,0x25,0x29,0x1b,0x1f,0x14,0x18,0x1d,0x14,0x18,0xf,0x15,0x9,0x10,0x8
 proxd_6g_high_20mkval=0x9,0x6,0x4,0x9,0x0,0x5,0x1d,0x23,0x17,0x1d,0x14,0x18,0x1e,0x12,0x17,0xc,0x12,0x16,0xd,0x11,0x6,0xc,0x9,0x8,0xc,0x4,0x6,0x6,0x2
 
-ocl=1
-slice/1/ocl=1
-
-#CLTM Duty cycles
-tvpm_dc_cltm=100,100,90,90,80,80,70,70,60,60,50,50,40,40,30,30,20,20,1,1
-
 ### SAR ROW FCC and JP
 sar_regulatory_enab=1
 slice/1/sar_regulatory_enab=1
 #
 #### ROW
-#SAR HEAD-MIMO MODE Params - ROW
-slice/1/dynsar_2g=0xc6c6
-slice/1/dynsar_2g_2=0xc6c6
-dynsar_5gs=0xd4d4,0xd4d4,0xd4d4,0xb8b8
-dynsar_5gs_2=0xd4d4,0xd4d4,0xd4d4,0xb8b8
-dynsar_6gs=0xd6d6,0xd6d6,0xd6d6,0xd6d6,0xd6d6,0xd6d6
-dynsar_6gs_2=0xd6d6,0xd6d6,0xd6d6,0xd6d6,0xd6d6,0xd6d6
-#SAR HEAD-RSDB MODE Params  - ROW
-slice/1/rsdb_dynsar_2g=0xc6c6
-slice/1/rsdb_dynsar_2g_2=0xc6c6
-rsdb_dynsar_5gs=0xd4d4,0xd4d4,0xd4d4,0xb8b8
-rsdb_dynsar_5gs_2=0xd4d4,0xd4d4,0xd4d4,0xb8b8
-rsdb_dynsar_6gs=0xd6d6,0xd6d6,0xd6d6,0xd6d6,0xd6d6,0xd6d6
-rsdb_dynsar_6gs_2=0xd6d6,0xd6d6,0xd6d6,0xd6d6,0xd6d6,0xd6d6
-#SAR GRIP-MIMO MODE Params - ROW
-slice/1/grip_dynsar_2g=0xc6c6
-slice/1/grip_dynsar_2g_2=0xc6c6
-grip_dynsar_5gs=0xd4d4,0xd4d4,0xcece,0xb8b8
-grip_dynsar_5gs_2=0xc4c4,0xc4c4,0xbcbc,0xb8b8
-grip_dynsar_6gs=0xd4d4,0xd4d4,0xd4d4,0xd4d4,0xd4d4,0xd4d4
-grip_dynsar_6gs_2=0xc4c4,0xc4c4,0xc4c4,0xc4c4,0xc4c4,0xc4c4
-#SAR GRIP-RSDB MODE Params - ROW
-slice/1/grip_rsdb_dynsar_2g=0xc6c6
-slice/1/grip_rsdb_dynsar_2g_2=0xc6c6
-grip_rsdb_dynsar_5gs=0xd4d4,0xd4d4,0xcece,0xb8b8
-grip_rsdb_dynsar_5gs_2=0xc4c4,0xc4c4,0xbcbc,0xb8b8
-grip_rsdb_dynsar_6gs=0xd4d4,0xd4d4,0xd4d4,0xd4d4,0xd4d4,0xd4d4
-grip_rsdb_dynsar_6gs_2=0xc4c4,0xc4c4,0xc4c4,0xc4c4,0xc4c4,0xc4c4
-#SAR BT-MIMO MODE Params - ROW
+###SAR HEAD-MIMO MODE Params
+slice/1/dynsar_2g=0xacac
+slice/1/dynsar_2g_2=0xacac
+dynsar_5gs=0xa8a8,0xa8a8,0xa4a4,0xaaaa
+dynsar_5gs_2=0xa8a8,0xa8a8,0xa4a4,0xaaaa
+dynsar_6gs=0xa4a4,0xa4a4,0xa4a4,0xa4a4,0xa4a4,0xa4a4
+dynsar_6gs_2=0xa4a4,0xa4a4,0xa4a4,0xa4a4,0xa4a4,0xa4a4
+##
+###SAR HEAD-RSDB MODE Params
+slice/1/rsdb_dynsar_2g=0xacac
+slice/1/rsdb_dynsar_2g_2=0xacac
+rsdb_dynsar_5gs=0xa8a8,0xa8a8,0xa4a4,0xaaaa
+rsdb_dynsar_5gs_2=0xa8a8,0xa8a8,0xa4a4,0xaaaa
+rsdb_dynsar_6gs=0xa4a4,0xa4a4,0xa4a4,0xa4a4,0xa4a4,0xa4a4
+rsdb_dynsar_6gs_2=0xa4a4,0xa4a4,0xa4a4,0xa4a4,0xa4a4,0xa4a4
+##
+###SAR GRIP-MIMO MODE Params
+slice/1/grip_dynsar_2g=0xbaba
+slice/1/grip_dynsar_2g_2=0xbaba
+grip_dynsar_5gs=0xbcbc,0xbebe,0xbaba,0xbcbc
+grip_dynsar_5gs_2=0xbcbc,0xbebe,0xbaba,0xbcbc
+grip_dynsar_6gs=0xbaba,0xbaba,0xbaba,0xbaba,0xbaba,0xbaba
+grip_dynsar_6gs_2=0xbaba,0xbaba,0xbaba,0xbaba,0xbaba,0xbaba
+##
+###SAR GRIP-RSDB MODE Params
+slice/1/grip_rsdb_dynsar_2g=0xbaba
+slice/1/grip_rsdb_dynsar_2g_2=0xbaba
+grip_rsdb_dynsar_5gs=0xbcbc,0xbebe,0xbaba,0xbcbc
+grip_rsdb_dynsar_5gs_2=0xbcbc,0xbebe,0xbaba,0xbcbc
+grip_rsdb_dynsar_6gs=0xbaba,0xbaba,0xbaba,0xbaba,0xbaba,0xbaba
+grip_rsdb_dynsar_6gs_2=0xbaba,0xbaba,0xbaba,0xbaba,0xbaba,0xbaba
+##
+###SAR BT-MIMO MODE Params
 slice/1/bt_dynsar_2g=0xbaba
 slice/1/bt_dynsar_2g_2=0xbaba
 bt_dynsar_5gs=0xbcbc,0xbebe,0xbaba,0xbcbc
 bt_dynsar_5gs_2=0xbcbc,0xbebe,0xbaba,0xbcbc
 bt_dynsar_6gs=0xbaba,0xbaba,0xbaba,0xbaba,0xbaba,0xbaba
 bt_dynsar_6gs_2=0xbaba,0xbaba,0xbaba,0xbaba,0xbaba,0xbaba
-#SAR BT-RSDB MODE Params - ROW
+##
+###SAR BT-RSDB MODE Params
 slice/1/bt_rsdb_dynsar_2g=0xbaba
 slice/1/bt_rsdb_dynsar_2g_2=0xbaba
 bt_rsdb_dynsar_5gs=0xbcbc,0xbebe,0xbaba,0xbcbc
 bt_rsdb_dynsar_5gs_2=0xbcbc,0xbebe,0xbaba,0xbcbc
 bt_rsdb_dynsar_6gs=0xbaba,0xbaba,0xbaba,0xbaba,0xbaba,0xbaba
 bt_rsdb_dynsar_6gs_2=0xbaba,0xbaba,0xbaba,0xbaba,0xbaba,0xbaba
-#SAR HOTSPOT-MIMO MODE Params - ROW
+##
+###SAR HOTSPOT-MIMO MODE Params
 slice/1/hotspot_dynsar_2g=0xbaba
 slice/1/hotspot_dynsar_2g_2=0xbaba
 hotspot_dynsar_5gs=0xbcbc,0xbebe,0xbaba,0xbcbc
 hotspot_dynsar_5gs_2=0xbcbc,0xbebe,0xbaba,0xbcbc
 hotspot_dynsar_6gs=0xbaba,0xbaba,0xbaba,0xbaba,0xbaba,0xbaba
 hotspot_dynsar_6gs_2=0xbaba,0xbaba,0xbaba,0xbaba,0xbaba,0xbaba
-#SAR HOTSPOT-RSDB MODE Params - ROW
+##
+###SAR HOTSPOT-RSDB MODE Params
 slice/1/hotspot_rsdb_dynsar_2g=0xbaba
 slice/1/hotspot_rsdb_dynsar_2g_2=0xbaba
 hotspot_rsdb_dynsar_5gs=0xbcbc,0xbebe,0xbaba,0xbcbc
 hotspot_rsdb_dynsar_5gs_2=0xbcbc,0xbebe,0xbaba,0xbcbc
 hotspot_rsdb_dynsar_6gs=0xbaba,0xbaba,0xbaba,0xbaba,0xbaba,0xbaba
 hotspot_rsdb_dynsar_6gs_2=0xbaba,0xbaba,0xbaba,0xbaba,0xbaba,0xbaba
-#SAR HEAD-MIMO MODE Params - FCC
-slice/1/fcc_dynsar_2g=0xc6c6
-slice/1/fcc_dynsar_2g_2=0xbcbc
-fcc_dynsar_5gs=0xcece,0xd0d0,0xc8c8,0xcccc
-fcc_dynsar_5gs_2=0xc4c4,0xc0c0,0xbaba,0xbebe
-fcc_dynsar_6gs=0xbcbc,0xbcbc,0xbcbc,0xbcbc,0xbcbc,0xbcbc
-fcc_dynsar_6gs_2=0xbcbc,0xbcbc,0xbcbc,0xbcbc,0xbcbc,0xbcbc
-#SAR HEAD-RSDB MODE Params  - FCC
-slice/1/fcc_rsdb_dynsar_2g=0xc4c4
-slice/1/fcc_rsdb_dynsar_2g_2=0xaaaa
-fcc_rsdb_dynsar_5gs=0xcccc,0xcccc,0xc6c6,0xcaca
-fcc_rsdb_dynsar_5gs_2=0xc4c4,0xc0c0,0xbaba,0xbebe
-fcc_rsdb_dynsar_6gs=0xbcbc,0xbcbc,0xbcbc,0xbcbc,0xbcbc,0xbcbc
-fcc_rsdb_dynsar_6gs_2=0xbcbc,0xbcbc,0xbcbc,0xbcbc,0xbcbc,0xbcbc
-#SAR GRIP-MIMO MODE Params - FCC
-slice/1/fcc_grip_dynsar_2g=0xdcdc
-slice/1/fcc_grip_dynsar_2g_2=0xc8c8
-fcc_grip_dynsar_5gs=0xcece,0xd0d0,0xc8c8,0xcccc
-fcc_grip_dynsar_5gs_2=0xc4c4,0xc0c0,0xbaba,0xbebe
-fcc_grip_dynsar_6gs=0xbcbc,0xbcbc,0xbcbc,0xbcbc,0xbcbc,0xbcbc
-fcc_grip_dynsar_6gs_2=0xbcbc,0xbcbc,0xbcbc,0xbcbc,0xbcbc,0xbcbc
-#SAR GRIP-RSDB MODE Params - FCC
-slice/1/fcc_grip_rsdb_dynsar_2g=0xcece
-slice/1/fcc_grip_rsdb_dynsar_2g_2=0xbcbc
-fcc_grip_rsdb_dynsar_5gs=0xcccc,0xcccc,0xc6c6,0xcaca
-fcc_grip_rsdb_dynsar_5gs_2=0xc4c4,0xc0c0,0xbaba,0xbebe
-fcc_grip_rsdb_dynsar_6gs=0xbcbc,0xbcbc,0xbcbc,0xbcbc,0xbcbc,0xbcbc
-fcc_grip_rsdb_dynsar_6gs_2=0xbcbc,0xbcbc,0xbcbc,0xbcbc,0xbcbc,0xbcbc
-#SAR BT-MIMO MODE Params - FCC
+#### FCC
+###SAR HEAD-MIMO MODE Params
+slice/1/fcc_dynsar_2g=0xacac
+slice/1/fcc_dynsar_2g_2=0xacac
+fcc_dynsar_5gs=0xa8a8,0xa8a8,0xa4a4,0xaaaa
+fcc_dynsar_5gs_2=0xa8a8,0xa8a8,0xa4a4,0xaaaa
+fcc_dynsar_6gs=0xa4a4,0xa4a4,0xa4a4,0xa4a4
+fcc_dynsar_6gs_2=0xa4a4,0xa4a4,0xa4a4,0xa4a4
+##
+###SAR HEAD-RSDB MODE Params
+slice/1/fcc_rsdb_dynsar_2g=0xacac
+slice/1/fcc_rsdb_dynsar_2g_2=0xacac
+fcc_rsdb_dynsar_5gs=0xa8a8,0xa8a8,0xa4a4,0xaaaa
+fcc_rsdb_dynsar_5gs_2=0xa8a8,0xa8a8,0xa4a4,0xaaaa
+fcc_rsdb_dynsar_6gs=0xa4a4,0xa4a4,0xa4a4,0xa4a4
+fcc_rsdb_dynsar_6gs_2=0xa4a4,0xa4a4,0xa4a4,0xa4a4
+##
+###SAR GRIP-MIMO MODE Params
+slice/1/fcc_grip_dynsar_2g=0xbaba
+slice/1/fcc_grip_dynsar_2g_2=0xbaba
+fcc_grip_dynsar_5gs=0xbcbc,0xbebe,0xbaba,0xbcbc
+fcc_grip_dynsar_5gs_2=0xbcbc,0xbebe,0xbaba,0xbcbc
+fcc_grip_dynsar_6gs=0xbaba,0xbaba,0xbaba,0xbaba,0xbaba,0xbaba
+fcc_grip_dynsar_6gs_2=0xbaba,0xbaba,0xbaba,0xbaba,0xbaba,0xbaba
+##
+###SAR GRIP-RSDB MODE Params
+slice/1/fcc_grip_rsdb_dynsar_2g=0xbaba
+slice/1/fcc_grip_rsdb_dynsar_2g_2=0xbaba
+fcc_grip_rsdb_dynsar_5gs=0xbcbc,0xbebe,0xbaba,0xbcbc
+fcc_grip_rsdb_dynsar_5gs_2=0xbcbc,0xbebe,0xbaba,0xbcbc
+fcc_grip_rsdb_dynsar_6gs=0xbaba,0xbaba,0xbaba,0xbaba,0xbaba,0xbaba
+fcc_grip_rsdb_dynsar_6gs_2=0xbaba,0xbaba,0xbaba,0xbaba,0xbaba,0xbaba
+##
+###SAR BT-MIMO MODE Params
 slice/1/fcc_bt_dynsar_2g=0xbaba
 slice/1/fcc_bt_dynsar_2g_2=0xbaba
 fcc_bt_dynsar_5gs=0xbcbc,0xbebe,0xbaba,0xbcbc
 fcc_bt_dynsar_5gs_2=0xbcbc,0xbebe,0xbaba,0xbcbc
 fcc_bt_dynsar_6gs=0xbaba,0xbaba,0xbaba,0xbaba,0xbaba,0xbaba
 fcc_bt_dynsar_6gs_2=0xbaba,0xbaba,0xbaba,0xbaba,0xbaba,0xbaba
-#SAR BT-RSDB MODE Params - FCC
+##
+###SAR BT-RSDB MODE Params
 slice/1/fcc_bt_rsdb_dynsar_2g=0xbaba
 slice/1/fcc_bt_rsdb_dynsar_2g_2=0xbaba
 fcc_bt_rsdb_dynsar_5gs=0xbcbc,0xbebe,0xbaba,0xbcbc
 fcc_bt_rsdb_dynsar_5gs_2=0xbcbc,0xbebe,0xbaba,0xbcbc
 fcc_bt_rsdb_dynsar_6gs=0xbaba,0xbaba,0xbaba,0xbaba,0xbaba,0xbaba
 fcc_bt_rsdb_dynsar_6gs_2=0xbaba,0xbaba,0xbaba,0xbaba,0xbaba,0xbaba
-#SAR HOTSPOT-MIMO MODE Params - FCC
+##
+###SAR HOTSPOT-MIMO MODE Params
 slice/1/fcc_hotspot_dynsar_2g=0xbaba
 slice/1/fcc_hotspot_dynsar_2g_2=0xbaba
 fcc_hotspot_dynsar_5gs=0xbcbc,0xbebe,0xbaba,0xbcbc
 fcc_hotspot_dynsar_5gs_2=0xbcbc,0xbebe,0xbaba,0xbcbc
 fcc_hotspot_dynsar_6gs=0xbaba,0xbaba,0xbaba,0xbaba,0xbaba,0xbaba
 fcc_hotspot_dynsar_6gs_2=0xbaba,0xbaba,0xbaba,0xbaba,0xbaba,0xbaba
-#SAR HOTSPOT-RSDB MODE Params - FCC
+##
+###SAR HOTSPOT-RSDB MODE Params
 slice/1/fcc_hotspot_rsdb_dynsar_2g=0xbaba
 slice/1/fcc_hotspot_rsdb_dynsar_2g_2=0xbaba
 fcc_hotspot_rsdb_dynsar_5gs=0xbcbc,0xbebe,0xbaba,0xbcbc
 fcc_hotspot_rsdb_dynsar_5gs_2=0xbcbc,0xbebe,0xbaba,0xbcbc
 fcc_hotspot_rsdb_dynsar_6gs=0xbaba,0xbaba,0xbaba,0xbaba,0xbaba,0xbaba
 fcc_hotspot_rsdb_dynsar_6gs_2=0xbaba,0xbaba,0xbaba,0xbaba,0xbaba,0xbaba
-#SAR HEAD-MIMO MODE Params - JAPAN
-slice/1/jp_dynsar_2g=0xc6c6
-slice/1/jp_dynsar_2g_2=0xc6c6
-jp_dynsar_5gs=0xd4d4,0xd4d4,0xd4d4,0xb8b8
-jp_dynsar_5gs_2=0xd4d4,0xd4d4,0xd4d4,0xb8b8
-jp_dynsar_6gs=0xd6d6,0xd6d6,0xd6d6,0xd6d6,0xd6d6,0xd6d6
-jp_dynsar_6gs_2=0xd6d6,0xd6d6,0xd6d6,0xd6d6,0xd6d6,0xd6d6
-#SAR HEAD-RSDB MODE Params - JAPAN
-slice/1/jp_rsdb_dynsar_2g=0xc6c6
-slice/1/jp_rsdb_dynsar_2g_2=0xc6c6
-jp_rsdb_dynsar_5gs=0xd4d4,0xd4d4,0xd4d4,0xb8b8
-jp_rsdb_dynsar_5gs_2=0xd4d4,0xd4d4,0xd4d4,0xb8b8
-jp_rsdb_dynsar_6gs=0xd6d6,0xd6d6,0xd6d6,0xd6d6,0xd6d6,0xd6d6
-jp_rsdb_dynsar_6gs_2=0xd6d6,0xd6d6,0xd6d6,0xd6d6,0xd6d6,0xd6d6
-#SAR GRIP-MIMO MODE Params - JAPAN
-slice/1/jp_grip_dynsar_2g=0xc6c6
-slice/1/jp_grip_dynsar_2g_2=0xc6c6
-jp_grip_dynsar_5gs=0xd4d4,0xd4d4,0xcece,0xb8b8
-jp_grip_dynsar_5gs_2=0xc4c4,0xc4c4,0xbcbc,0xb8b8
-jp_grip_dynsar_6gs=0xd4d4,0xd4d4,0xd4d4,0xd4d4,0xd4d4,0xd4d4
-jp_grip_dynsar_6gs_2=0xc4c4,0xc4c4,0xc4c4,0xc4c4,0xc4c4,0xc4c4
-#SAR GRIP-RSDB MODE Params - JAPAN
-slice/1/jp_grip_rsdb_dynsar_2g=0xc6c6
-slice/1/jp_grip_rsdb_dynsar_2g_2=0xc6c6
-jp_grip_rsdb_dynsar_5gs=0xd4d4,0xd4d4,0xcece,0xb8b8
-jp_grip_rsdb_dynsar_5gs_2=0xc4c4,0xc4c4,0xbcbc,0xb8b8
-jp_grip_rsdb_dynsar_6gs=0xd4d4,0xd4d4,0xd4d4,0xd4d4,0xd4d4,0xd4d4
-jp_grip_rsdb_dynsar_6gs_2=0xc4c4,0xc4c4,0xc4c4,0xc4c4,0xc4c4,0xc4c4
-#SAR BT-MIMO MODE Params  - JAPAN
+#### JAPAN
+###SAR HEAD-MIMO MODE Params
+slice/1/jp_dynsar_2g=0xacac
+slice/1/jp_dynsar_2g_2=0xacac
+jp_dynsar_5gs=0xa8a8,0xa8a8,0xa4a4,0xaaaa
+jp_dynsar_5gs_2=0xa8a8,0xa8a8,0xa4a4,0xaaaa
+jp_dynsar_6gs=0xa4a4,0xa4a4,0xa4a4,0xa4a4,0xa4a4,0xa4a4
+jp_dynsar_6gs_2=0xa4a4,0xa4a4,0xa4a4,0xa4a4,0xa4a4,0xa4a4
+##
+###SAR HEAD-RSDB MODE Params
+slice/1/jp_rsdb_dynsar_2g=0xacac
+slice/1/jp_rsdb_dynsar_2g_2=0xacac
+jp_rsdb_dynsar_5gs=0xa8a8,0xa8a8,0xa4a4,0xaaaa
+jp_rsdb_dynsar_5gs_2=0xa8a8,0xa8a8,0xa4a4,0xaaaa
+jp_rsdb_dynsar_6gs=0xa4a4,0xa4a4,0xa4a4,0xa4a4,0xa4a4,0xa4a4
+jp_rsdb_dynsar_6gs_2=0xa4a4,0xa4a4,0xa4a4,0xa4a4,0xa4a4,0xa4a4
+##
+###SAR GRIP-MIMO MODE Params
+slice/1/jp_grip_dynsar_2g=0xbaba
+slice/1/jp_grip_dynsar_2g_2=0xbaba
+jp_grip_dynsar_5gs=0xbcbc,0xbebe,0xbaba,0xbcbc
+jp_grip_dynsar_5gs_2=0xbcbc,0xbebe,0xbaba,0xbcbc
+jp_grip_dynsar_6gs=0xbaba,0xbaba,0xbaba,0xbaba,0xbaba,0xbaba
+jp_grip_dynsar_6gs_2=0xbaba,0xbaba,0xbaba,0xbaba,0xbaba,0xbaba
+##
+###SAR GRIP-RSDB MODE Params
+slice/1/jp_grip_rsdb_dynsar_2g=0xbaba
+slice/1/jp_grip_rsdb_dynsar_2g_2=0xbaba
+jp_grip_rsdb_dynsar_5gs=0xbcbc,0xbebe,0xbaba,0xbcbc
+jp_grip_rsdb_dynsar_5gs_2=0xbcbc,0xbebe,0xbaba,0xbcbc
+jp_grip_rsdb_dynsar_6gs=0xbaba,0xbaba,0xbaba,0xbaba,0xbaba,0xbaba
+jp_grip_rsdb_dynsar_6gs_2=0xbaba,0xbaba,0xbaba,0xbaba,0xbaba,0xbaba
+##
+###SAR BT-MIMO MODE Params
 slice/1/jp_bt_dynsar_2g=0xbaba
 slice/1/jp_bt_dynsar_2g_2=0xbaba
 jp_bt_dynsar_5gs=0xbcbc,0xbebe,0xbaba,0xbcbc
 jp_bt_dynsar_5gs_2=0xbcbc,0xbebe,0xbaba,0xbcbc
 jp_bt_dynsar_6gs=0xbaba,0xbaba,0xbaba,0xbaba,0xbaba,0xbaba
 jp_bt_dynsar_6gs_2=0xbaba,0xbaba,0xbaba,0xbaba,0xbaba,0xbaba
-#SAR BT-RSDB MODE Params - JAPAN
+##
+###SAR BT-RSDB MODE Params
 slice/1/jp_bt_rsdb_dynsar_2g=0xbaba
 slice/1/jp_bt_rsdb_dynsar_2g_2=0xbaba
 jp_bt_rsdb_dynsar_5gs=0xbcbc,0xbebe,0xbaba,0xbcbc
 jp_bt_rsdb_dynsar_5gs_2=0xbcbc,0xbebe,0xbaba,0xbcbc
 jp_bt_rsdb_dynsar_6gs=0xbaba,0xbaba,0xbaba,0xbaba,0xbaba,0xbaba
 jp_bt_rsdb_dynsar_6gs_2=0xbaba,0xbaba,0xbaba,0xbaba,0xbaba,0xbaba
-#SAR HOTSPOT-MIMO MODE Params - JAPAN
+##
+###SAR HOTSPOT-MIMO MODE Params
 slice/1/jp_hotspot_dynsar_2g=0xbaba
 slice/1/jp_hotspot_dynsar_2g_2=0xbaba
 jp_hotspot_dynsar_5gs=0xbcbc,0xbebe,0xbaba,0xbcbc
 jp_hotspot_dynsar_5gs_2=0xbcbc,0xbebe,0xbaba,0xbcbc
 jp_hotspot_dynsar_6gs=0xbaba,0xbaba,0xbaba,0xbaba,0xbaba,0xbaba
 jp_hotspot_dynsar_6gs_2=0xbaba,0xbaba,0xbaba,0xbaba,0xbaba,0xbaba
-#SAR HOTSPOT-RSDB MODE Params - JAPAN
+##
+###SAR HOTSPOT-RSDB MODE Params
 slice/1/jp_hotspot_rsdb_dynsar_2g=0xbaba
 slice/1/jp_hotspot_rsdb_dynsar_2g_2=0xbaba
 jp_hotspot_rsdb_dynsar_5gs=0xbcbc,0xbebe,0xbaba,0xbcbc
 jp_hotspot_rsdb_dynsar_5gs_2=0xbcbc,0xbebe,0xbaba,0xbcbc
 jp_hotspot_rsdb_dynsar_6gs=0xbaba,0xbaba,0xbaba,0xbaba,0xbaba,0xbaba
 jp_hotspot_rsdb_dynsar_6gs_2=0xbaba,0xbaba,0xbaba,0xbaba,0xbaba,0xbaba
+
+ocl=1
+slice/1/ocl=1
+
+#CLTM Duty cycles
+tvpm_dc_cltm=100,100,90,90,80,80,70,70,60,60,50,50,40,40,30,30,20,20,1,1
